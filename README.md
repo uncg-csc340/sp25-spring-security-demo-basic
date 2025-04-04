@@ -16,5 +16,4 @@
       -   There are other rules for authorization [here](https://docs.spring.io/spring-security/reference/servlet/authorization/authorize-http-requests.html#authorize-requests)
       -   Provide a login configuration. This can either be [default or customized](https://docs.spring.io/spring-security/reference/servlet/authentication/passwords/form.html).
       -   Add an [exception handler](https://docs.spring.io/spring-security/reference/servlet/authentication/passwords/form.html). If a request is not authorized based on the rules defined above, the app will send a GET request to /403. You can customize this whatever you want but you MUST have the endpoint mapped in some controller.
-      -   Logout is also permitted for everyone.
       -   Configure an authentication manager. We are using the BCryptPasswordEncoder from Spring Security, and the previously mentioned AppUserDetailsService to enforce the above rules for any user who logs in. 
